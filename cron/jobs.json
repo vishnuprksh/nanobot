@@ -1,0 +1,201 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "ea4d7d53",
+      "name": "/root/personal-assistant/daily",
+      "enabled": true,
+      "schedule": {
+        "kind": "cron",
+        "atMs": null,
+        "everyMs": null,
+        "expr": "0 8 * * *",
+        "tz": null
+      },
+      "payload": {
+        "kind": "agent_turn",
+        "message": "/root/personal-assistant/daily_schedule.sh",
+        "deliver": true,
+        "channel": "telegram",
+        "to": "457681374"
+      },
+      "state": {
+        "nextRunAtMs": 1771315200000,
+        "lastRunAtMs": 1771228800003,
+        "lastStatus": "ok",
+        "lastError": null
+      },
+      "createdAtMs": 1770839268813,
+      "updatedAtMs": 1771229680964,
+      "deleteAfterRun": false
+    },
+    {
+      "id": "ac03f6d7",
+      "name": "Run /root/.nanobot/workspace/.",
+      "enabled": true,
+      "schedule": {
+        "kind": "cron",
+        "atMs": null,
+        "everyMs": null,
+        "expr": "0 */4 * * *",
+        "tz": null
+      },
+      "payload": {
+        "kind": "agent_turn",
+        "message": "Run /root/.nanobot/workspace/.backup/backup.sh",
+        "deliver": true,
+        "channel": "telegram",
+        "to": "457681374"
+      },
+      "state": {
+        "nextRunAtMs": 1771243200000,
+        "lastRunAtMs": 1771229680965,
+        "lastStatus": "ok",
+        "lastError": null
+      },
+      "createdAtMs": 1770841736839,
+      "updatedAtMs": 1771230598951,
+      "deleteAfterRun": false
+    },
+    {
+      "id": "0cfb95bd",
+      "name": "Personal Assistant: Generate a",
+      "enabled": true,
+      "schedule": {
+        "kind": "cron",
+        "atMs": null,
+        "everyMs": null,
+        "expr": "0 8 * * *",
+        "tz": null
+      },
+      "payload": {
+        "kind": "agent_turn",
+        "message": "Personal Assistant: Generate and send daily schedule",
+        "deliver": true,
+        "channel": "telegram",
+        "to": "457681374"
+      },
+      "state": {
+        "nextRunAtMs": 1771315200000,
+        "lastRunAtMs": 1771230598951,
+        "lastStatus": "ok",
+        "lastError": null
+      },
+      "createdAtMs": 1770843719293,
+      "updatedAtMs": 1771230600671,
+      "deleteAfterRun": false
+    },
+    {
+      "id": "269466f5",
+      "name": "Personal Assistant: Morning sc",
+      "enabled": true,
+      "schedule": {
+        "kind": "cron",
+        "atMs": null,
+        "everyMs": null,
+        "expr": "0 8 * * *",
+        "tz": null
+      },
+      "payload": {
+        "kind": "agent_turn",
+        "message": "Personal Assistant: Morning schedule generation",
+        "deliver": true,
+        "channel": "telegram",
+        "to": "457681374"
+      },
+      "state": {
+        "nextRunAtMs": 1771315200000,
+        "lastRunAtMs": 1771230600672,
+        "lastStatus": "ok",
+        "lastError": null
+      },
+      "createdAtMs": 1770843730991,
+      "updatedAtMs": 1771230600756,
+      "deleteAfterRun": false
+    },
+    {
+      "id": "c283f3d8",
+      "name": "Personal Assistant: Evening re",
+      "enabled": true,
+      "schedule": {
+        "kind": "cron",
+        "atMs": null,
+        "everyMs": null,
+        "expr": "0 18 * * *",
+        "tz": null
+      },
+      "payload": {
+        "kind": "agent_turn",
+        "message": "Personal Assistant: Evening review",
+        "deliver": true,
+        "channel": "telegram",
+        "to": "457681374"
+      },
+      "state": {
+        "nextRunAtMs": 1771264800000,
+        "lastRunAtMs": 1771178400008,
+        "lastStatus": "ok",
+        "lastError": null
+      },
+      "createdAtMs": 1770843730992,
+      "updatedAtMs": 1771178449430,
+      "deleteAfterRun": false
+    },
+    {
+      "id": "81050573",
+      "name": "Workspace backed up.",
+      "enabled": true,
+      "schedule": {
+        "kind": "every",
+        "atMs": null,
+        "everyMs": 14400000,
+        "expr": null,
+        "tz": null
+      },
+      "payload": {
+        "kind": "agent_turn",
+        "message": "Workspace backed up.",
+        "deliver": true,
+        "channel": "telegram",
+        "to": "457681374"
+      },
+      "state": {
+        "nextRunAtMs": 1771242877877,
+        "lastRunAtMs": 1771220945642,
+        "lastStatus": "ok",
+        "lastError": null
+      },
+      "createdAtMs": 1771148919778,
+      "updatedAtMs": 1771220953531,
+      "deleteAfterRun": false
+    },
+    {
+      "id": "5ab465f8",
+      "name": "Backup the workspace by runnin",
+      "enabled": true,
+      "schedule": {
+        "kind": "every",
+        "atMs": null,
+        "everyMs": 21600000,
+        "expr": null,
+        "tz": null
+      },
+      "payload": {
+        "kind": "agent_turn",
+        "message": "Backup the workspace by running /root/.nanobot/workspace/.backup/backup.sh",
+        "deliver": true,
+        "channel": "telegram",
+        "to": "457681374"
+      },
+      "state": {
+        "nextRunAtMs": 1771250077877,
+        "lastRunAtMs": 1771206617225,
+        "lastStatus": "ok",
+        "lastError": null
+      },
+      "createdAtMs": 1771163407255,
+      "updatedAtMs": 1771206626735,
+      "deleteAfterRun": false
+    }
+  ]
+}
