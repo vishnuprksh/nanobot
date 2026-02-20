@@ -1,0 +1,18 @@
+[Unit]
+Description=Check-in Bot Polling Service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+WorkingDirectory=/root/.nanobot/workspace/subagents
+ExecStart=/usr/bin/python3 /root/.nanobot/workspace/subagents/checkin_polling.py
+Environment=PYTHONUNBUFFERED=1
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

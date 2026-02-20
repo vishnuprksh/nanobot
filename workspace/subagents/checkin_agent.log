@@ -1,0 +1,1 @@
+2026-02-20 15:40:30,966 - checkin_agent - ERROR - Failed to send message: {'ok': False, 'error_code': 403, 'description': 'Forbidden: bot was blocked by the user'}
