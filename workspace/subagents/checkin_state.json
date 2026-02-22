@@ -1,0 +1,14 @@
+{
+  "last_checkin_time": null,
+  "pending_responses": [],
+  "message_history": [],
+  "active_checkins": {
+    "2026-02-20_1743": {
+      "message_id": 25,
+      "time": "17:43",
+      "date": "2026-02-20",
+      "status": "sent",
+      "response": null
+    }
+  }
+}

@@ -1,1 +1,4 @@
 2026-02-20 15:40:30,966 - checkin_agent - ERROR - Failed to send message: {'ok': False, 'error_code': 403, 'description': 'Forbidden: bot was blocked by the user'}
+2026-02-20 17:43:55,127 - checkin_agent - INFO - Check-in sent successfully. Message ID: 25
+2026-02-20 17:43:55,128 - checkin_agent - INFO - Updated daily note: /root/.nanobot/workspace/memory/2026-02-20.md
+2026-02-20 17:43:55,130 - checkin_agent - INFO - Custom check-in sent. Message ID: 25

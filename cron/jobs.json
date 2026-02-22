@@ -20,13 +20,13 @@
         "to": "457681374"
       },
       "state": {
-        "nextRunAtMs": 1771588800000,
-        "lastRunAtMs": 1771574400020,
+        "nextRunAtMs": 1771790400000,
+        "lastRunAtMs": 1771776000008,
         "lastStatus": "ok",
         "lastError": null
       },
       "createdAtMs": 1771418700754,
-      "updatedAtMs": 1771574520797,
+      "updatedAtMs": 1771776008271,
       "deleteAfterRun": false
     },
     {
@@ -48,13 +48,13 @@
         "to": "457681374"
       },
       "state": {
-        "nextRunAtMs": 1771617600000,
-        "lastRunAtMs": 1771531224606,
+        "nextRunAtMs": 1771790400000,
+        "lastRunAtMs": 1771704027274,
         "lastStatus": "ok",
         "lastError": null
       },
       "createdAtMs": 1771418710107,
-      "updatedAtMs": 1771531265745,
+      "updatedAtMs": 1771704047081,
       "deleteAfterRun": false
     },
     {
@@ -76,13 +76,13 @@
         "to": "457681374"
       },
       "state": {
-        "nextRunAtMs": 1771588800000,
-        "lastRunAtMs": 1771578000007,
+        "nextRunAtMs": 1771794000000,
+        "lastRunAtMs": 1771783200012,
         "lastStatus": "ok",
         "lastError": null
       },
       "createdAtMs": 1771420117316,
-      "updatedAtMs": 1771578074882,
+      "updatedAtMs": 1771783214328,
       "deleteAfterRun": false
     }
   ]

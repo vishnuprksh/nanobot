@@ -1,0 +1,63 @@
+🚀 Starting Dual Bot System
+===========================
+Virtual environment activated
+Starting bot polling service...
+✅ Dual bot polling started with PID: 3677275
+
+Sending test messages...
+python3: can't open file '/root/.nanobot/workspace/dual_bot_polling.py': [Errno 2] No such file or directory
+✅ NanoBot startup message sent
+✅ Personal Assistant startup message sent
+
+==========================================
+🎉 DUAL BOT SYSTEM IS NOW RUNNING!
+
+Both bots are active and listening:
+
+1. 🤖 NANOBOT
+   Token: 8275254305:AAEtsrH0DQAbL5uwha9uHu-0N3TkIGFcgpA
+   Personality: Technical AI Assistant
+   Style: Concise, technical, direct
+
+2. 👨‍💼 PERSONAL ASSISTANT
+   Token: 8430328850:AAHGAF2_DNrj8O6kFTOyplsrLbWXiIwHPYc
+   Personality: Friendly Personal Assistant
+   Style: Warm, supportive, task-oriented
+
+==========================================
+📱 TEST THE SYSTEM:
+
+Send a message to either bot on Telegram:
+- Message 'Hello' to Personal Assistant for warm greeting
+- Message 'System status' to NanoBot for technical response
+- Message 'Help' to either bot for context-appropriate help
+
+==========================================
+⚙️ SYSTEM CONTROLS:
+
+To stop the system:
+  kill $(cat /tmp/dual_bot.pid)
+
+To restart:
+  ./start_dual_bots.sh
+
+To view logs:
+  tail -f nohup.out
+
+==========================================
+🤖 BOT BEHAVIOR SUMMARY:
+
+NANOBOT will respond with:
+- Technical explanations
+- System diagnostics
+- Code and automation help
+- Minimal emojis (🚀, ✅, ⚠️, 🔧)
+
+PERSONAL ASSISTANT will respond with:
+- Friendly greetings
+- Task management help
+- Schedule planning
+- Encouraging tone with emojis (✨, 📅, ✅, 🎯)
+
+Both bots maintain separate conversation histories!
+==========================================
