@@ -1,0 +1,93 @@
+{
+  "timestamp": "2026-02-23T02:22:36.673821",
+  "apps_tested": 4,
+  "successful": 4,
+  "failed": 0,
+  "results": [
+    {
+      "success": true,
+      "tool": "ThinkNotes",
+      "response": {
+        "success": true,
+        "id": "ilmm5pzReOxHHgMUE7nk",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Obsidian",
+      "response": {
+        "success": true,
+        "id": "3QKTJDBSsSs6jK9KAUTC",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Logseq",
+      "response": {
+        "success": true,
+        "id": "h9WrB2tWKqlWCpCPdZlx",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Heptabase",
+      "response": {
+        "success": true,
+        "id": "mdbJS3K3uoDu743Mvpr6",
+        "message": "App submitted successfully!"
+      }
+    }
+  ],
+  "test_apps": [
+    {
+      "name": "ThinkNotes",
+      "description": "Your personal second brain application for note-taking and task management",
+      "url": "https://thinknotes.app",
+      "tags": [
+        "note-taking",
+        "task-management",
+        "second-brain"
+      ],
+      "source": "Reddit - r/secondbrain"
+    },
+    {
+      "name": "Obsidian",
+      "description": "A powerful knowledge base that works on local Markdown files",
+      "url": "https://obsidian.md",
+      "tags": [
+        "markdown",
+        "knowledge-base",
+        "graph-view",
+        "plugins"
+      ],
+      "source": "Reddit - r/PKMS"
+    },
+    {
+      "name": "Logseq",
+      "description": "A privacy-first, open-source platform for knowledge management and collaboration",
+      "url": "https://logseq.com",
+      "tags": [
+        "open-source",
+        "outliner",
+        "backlinks",
+        "privacy"
+      ],
+      "source": "Reddit - r/logseq"
+    },
+    {
+      "name": "Heptabase",
+      "description": "Visual knowledge mapping tool with whiteboards and card-based notes",
+      "url": "https://heptabase.com",
+      "tags": [
+        "visual",
+        "whiteboard",
+        "knowledge-mapping",
+        "cards"
+      ],
+      "source": "Reddit - r/secondbrain"
+    }
+  ]
+}

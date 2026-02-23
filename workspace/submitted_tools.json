@@ -1,0 +1,106 @@
+{
+  "https://thinknotes.app": {
+    "name": "ThinkNotes",
+    "description": "Your personal second brain application for note-taking and task management",
+    "websiteUrl": "https://thinknotes.app",
+    "tags": [
+      "note-taking",
+      "task-management",
+      "second-brain"
+    ],
+    "category": "AI",
+    "pricing": "Free",
+    "source": "Reddit - r/secondbrain",
+    "discovered": "2026-02-23T02:22:21.765813",
+    "submitted_at": "2026-02-23T02:22:26.610912",
+    "response": {
+      "success": true,
+      "id": "ilmm5pzReOxHHgMUE7nk",
+      "message": "App submitted successfully!"
+    }
+  },
+  "https://obsidian.md": {
+    "name": "Obsidian",
+    "description": "A powerful knowledge base that works on local Markdown files",
+    "websiteUrl": "https://obsidian.md",
+    "tags": [
+      "markdown",
+      "knowledge-base",
+      "graph-view",
+      "plugins"
+    ],
+    "category": "Other",
+    "pricing": "Free",
+    "source": "Reddit - r/PKMS",
+    "discovered": "2026-02-23T02:22:28.612479",
+    "submitted_at": "2026-02-23T02:22:29.227199",
+    "response": {
+      "success": true,
+      "id": "3QKTJDBSsSs6jK9KAUTC",
+      "message": "App submitted successfully!"
+    }
+  },
+  "https://logseq.com": {
+    "name": "Logseq",
+    "description": "A privacy-first, open-source platform for knowledge management and collaboration",
+    "websiteUrl": "https://logseq.com",
+    "tags": [
+      "open-source",
+      "outliner",
+      "backlinks",
+      "privacy"
+    ],
+    "category": "Task Management",
+    "pricing": "Free",
+    "source": "Reddit - r/logseq",
+    "discovered": "2026-02-23T02:22:31.229185",
+    "submitted_at": "2026-02-23T02:22:31.847405",
+    "response": {
+      "success": true,
+      "id": "h9WrB2tWKqlWCpCPdZlx",
+      "message": "App submitted successfully!"
+    }
+  },
+  "https://heptabase.com": {
+    "name": "Heptabase",
+    "description": "Visual knowledge mapping tool with whiteboards and card-based notes",
+    "websiteUrl": "https://heptabase.com",
+    "tags": [
+      "visual",
+      "whiteboard",
+      "knowledge-mapping",
+      "cards"
+    ],
+    "category": "Visual",
+    "pricing": "Free",
+    "source": "Reddit - r/secondbrain",
+    "discovered": "2026-02-23T02:22:33.849890",
+    "submitted_at": "2026-02-23T02:22:34.670918",
+    "response": {
+      "success": true,
+      "id": "mdbJS3K3uoDu743Mvpr6",
+      "message": "App submitted successfully!"
+    }
+  },
+  "https://www.reddit.com/r/secondbrain/comments/1my0wq3/the_second_brain_movement_is_just_digital_hoarding/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button": {
+    "name": "Unknown Tool",
+    "description": "A second brain/PKMS tool mentioned in Reddit community",
+    "websiteUrl": "https://www.reddit.com/r/secondbrain/comments/1my0wq3/the_second_brain_movement_is_just_digital_hoarding/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "ai"
+    ],
+    "category": "AI",
+    "pricing": "Free",
+    "source": "Reddit",
+    "discovered": "2026-02-23T03:53:20.932829",
+    "submitted_at": "2026-02-23T03:53:26.088477",
+    "response": {
+      "success": true,
+      "id": "A92PmNqNZdegSomkz2DP",
+      "message": "App submitted successfully!"
+    }
+  }
+}

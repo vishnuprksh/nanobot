@@ -1,0 +1,210 @@
+# Guide: Calling the submitApp Cloud Function from a Server
+
+This guide explains how to call the `submitApp` Firebase Cloud Function from a Node.js server environment from scratch.
+
+## Prerequisites
+
+- Node.js installed (version 16 or higher recommended)
+- A Firebase project with the `submitApp` Cloud Function deployed
+- Firebase configuration details (API key, project ID, etc.)
+
+## Step 1: Set Up a New Node.js Project
+
+Create a new directory for your server project and initialize it:
+
+```bash
+mkdir submit-app-server
+cd submit-app-server
+npm init -y
+```
+
+## Step 2: Install Dependencies
+
+Install the required Firebase SDK and HTTP client:
+
+```bash
+npm install firebase axios
+```
+
+- `firebase`: For Firebase authentication and initialization
+- `axios`: For making HTTP requests (you can also use Node.js built-in `fetch` if preferred)
+
+## Step 3: Create the Server Script
+
+Create a file called `submit-app.js` with the following content:
+
+```javascript
+const { initializeApp } = require('firebase/app');
+const { getAuth, signInAnonymously } = require('firebase/auth');
+const axios = require('axios');
+
+// Firebase configuration (replace with your actual config)
+const firebaseConfig = {
+  apiKey: "AIzaSyCLeY68ONelcMBG3AcZLZJnWHD4QqXKmZw",
+  authDomain: "findyoursecondbrain.firebaseapp.com",
+  projectId: "findyoursecondbrain",
+  storageBucket: "findyoursecondbrain.firebasestorage.app",
+  messagingSenderId: "686559526039",
+  appId: "1:686559526039:web:47a2f60e5b8a65ab5e7dd2",
+  measurementId: "G-B1FWVYXZND",
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+// Function to get anonymous auth token
+async function getAnonymousToken() {
+  try {
+    const userCredential = await signInAnonymously(auth);
+    const token = await userCredential.user.getIdToken();
+    return token;
+  } catch (error) {
+    throw new Error(`Failed to get anonymous token: ${error.message}`);
+  }
+}
+
+// Function to submit an app
+async function submitApp(appData) {
+  try {
+    // Get the anonymous auth token
+    const token = await getAnonymousToken();
+    
+    // Prepare the request
+    const url = 'https://us-central1-findyoursecondbrain.cloudfunctions.net/submitApp';
+    const headers = {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${token}`
+    };
+    
+    // Make the POST request
+    const response = await axios.post(url, appData, { headers });
+    
+    // Return the response data
+    return response.data;
+  } catch (error) {
+    throw new Error(`Failed to submit app: ${error.message}`);
+  }
+}
+
+// Example usage
+async function main() {
+  const appData = {
+    name: "My Awesome App",
+    description: "This is a description of my awesome app",
+    websiteUrl: "https://myawesomeapp.com",
+    tags: ["productivity", "ai", "tools"],
+    category: "Productivity",
+    pricing: "Free"
+  };
+  
+  try {
+    const result = await submitApp(appData);
+    console.log('App submitted successfully:', result);
+  } catch (error) {
+    console.error('Error submitting app:', error.message);
+  }
+}
+
+// Run the example if this script is executed directly
+if (require.main === module) {
+  main();
+}
+
+module.exports = { submitApp, getAnonymousToken };
+```
+
+## Step 4: Update package.json
+
+Add a start script to your `package.json`:
+
+```json
+{
+  "name": "submit-app-server",
+  "version": "1.0.0",
+  "main": "submit-app.js",
+  "scripts": {
+    "start": "node submit-app.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "firebase": "^10.7.0"
+  }
+}
+```
+
+## Step 5: Run the Script
+
+Execute the script to test the function call:
+
+```bash
+npm start
+```
+
+You should see output similar to:
+
+```
+App submitted successfully: { success: true, id: 'some-id', message: 'App submitted successfully' }
+```
+
+## Understanding the Code
+
+### Authentication
+The function uses Firebase Anonymous Authentication to get a valid token. This allows the Cloud Function to verify the request without requiring user login.
+
+### Request Structure
+The POST request includes:
+- **URL**: The Cloud Function endpoint
+- **Headers**:
+  - `Content-Type: application/json`
+  - `Authorization: Bearer <token>`
+- **Body**: JSON object with app details
+
+### Required App Data Fields
+- `name`: String - The name of the app
+- `description`: String - Description of the app
+- `websiteUrl`: String - URL to the app's website
+- `tags`: Array of strings - Tags associated with the app
+- `category`: String - Category of the app
+- `pricing`: String - Pricing model (e.g., "Free", "Paid")
+
+### Error Handling
+The code includes try-catch blocks to handle authentication failures and HTTP request errors. In production, you should implement more robust error handling and logging.
+
+## Security Considerations
+
+- Store Firebase config securely (use environment variables in production)
+- The anonymous token has a limited lifetime (typically 1 hour)
+- Consider implementing rate limiting on your server to prevent abuse
+- Validate app data on both client and server sides
+
+## Alternative: Using Built-in fetch
+
+If you prefer not to use axios, you can replace the axios call with Node.js built-in fetch (available in Node.js 18+):
+
+```javascript
+// Replace the axios.post call with:
+const response = await fetch(url, {
+  method: 'POST',
+  headers: headers,
+  body: JSON.stringify(appData)
+});
+
+if (!response.ok) {
+  throw new Error(`HTTP error! status: ${response.status}`);
+}
+
+const result = await response.json();
+```
+
+## Troubleshooting
+
+1. **Authentication Errors**: Ensure your Firebase config is correct and the project allows anonymous authentication.
+
+2. **Network Errors**: Check your internet connection and firewall settings.
+
+3. **Function Not Found**: Verify the Cloud Function URL and that it's deployed.
+
+4. **Invalid Data**: Ensure all required fields are provided and in the correct format.
+
+For more information, refer to the [Firebase Cloud Functions documentation](https://firebase.google.com/docs/functions) and [Firebase Authentication documentation](https://firebase.google.com/docs/auth).

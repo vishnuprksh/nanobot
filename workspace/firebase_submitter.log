@@ -1,0 +1,57 @@
+2026-02-23 02:22:21,765 - INFO - No previously submitted tools found, starting fresh
+2026-02-23 02:22:22,500 - INFO - Successfully obtained Firebase anonymous token
+2026-02-23 02:22:22,501 - INFO - Submitting tool: ThinkNotes
+2026-02-23 02:22:26,610 - INFO - Successfully submitted ThinkNotes
+2026-02-23 02:22:26,611 - INFO - Saved 1 submitted tools to file
+2026-02-23 02:22:28,612 - INFO - Submitting tool: Obsidian
+2026-02-23 02:22:29,227 - INFO - Successfully submitted Obsidian
+2026-02-23 02:22:29,227 - INFO - Saved 2 submitted tools to file
+2026-02-23 02:22:31,229 - INFO - Submitting tool: Logseq
+2026-02-23 02:22:31,847 - INFO - Successfully submitted Logseq
+2026-02-23 02:22:31,847 - INFO - Saved 3 submitted tools to file
+2026-02-23 02:22:33,849 - INFO - Submitting tool: Heptabase
+2026-02-23 02:22:34,670 - INFO - Successfully submitted Heptabase
+2026-02-23 02:22:34,671 - INFO - Saved 4 submitted tools to file
+2026-02-23 03:53:20,931 - INFO - Loaded 4 previously submitted tools
+2026-02-23 03:53:20,931 - INFO - ============================================================
+2026-02-23 03:53:20,931 - INFO - Starting Firebase submission - 2026-02-23 03:53:20
+2026-02-23 03:53:20,932 - INFO - ============================================================
+2026-02-23 03:53:20,932 - INFO - Found 31 tools in Reddit data
+2026-02-23 03:53:21,620 - INFO - Successfully obtained Firebase anonymous token
+2026-02-23 03:53:21,621 - INFO - Submitting tool: Unknown Tool
+2026-02-23 03:53:26,088 - INFO - Successfully submitted Unknown Tool
+2026-02-23 03:53:26,088 - INFO - Saved 5 submitted tools to file
+2026-02-23 03:53:27,090 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,091 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,091 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,091 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,091 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,091 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,091 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,091 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,091 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,091 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,091 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,091 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,092 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,092 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,092 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,092 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,092 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,092 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,092 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,092 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,092 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,092 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,092 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,092 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,092 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,092 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,092 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,092 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,092 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,092 - INFO - Tool with name unknown tool already submitted
+2026-02-23 03:53:27,092 - INFO - Submitted 1 new tools to Firebase
+2026-02-23 03:53:27,092 - INFO - ============================================================
+2026-02-23 03:53:27,092 - INFO - Submission complete: 1 successful, 0 failed
+2026-02-23 03:53:27,092 - INFO - ============================================================
