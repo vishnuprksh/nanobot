@@ -1,0 +1,215 @@
+{
+  "timestamp": "2026-03-01T16:33:16.636702",
+  "total_processed": 23,
+  "successful": 23,
+  "failed": 0,
+  "results": [
+    {
+      "success": true,
+      "tool": "Teamoffline",
+      "response": {
+        "success": true,
+        "id": "YWIublrK2hhtYY0IBkj8",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Sigilla",
+      "response": {
+        "success": true,
+        "id": "KitlDEtDNcRvf8VYtlpg",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Screenpi",
+      "response": {
+        "success": true,
+        "id": "5AzwlhS8YkuplyEIUZlI",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Rel",
+      "response": {
+        "success": true,
+        "id": "9gnpnFMoWly67nBRAmFR",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Glifo",
+      "response": {
+        "success": true,
+        "id": "uPziA1QflP9RSUoUb9ZS",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Implicit",
+      "response": {
+        "success": true,
+        "id": "ZhRVdQKC9nm5kSsPgLFL",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Implicitcloud",
+      "response": {
+        "success": true,
+        "id": "K42niVib6JRHE8CEew5T",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Buildsheet",
+      "response": {
+        "success": true,
+        "id": "KfcDLSUH2QymVWSI4qr4",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Fabric",
+      "response": {
+        "success": true,
+        "id": "fYQjux4vToKpKWENjcmK",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Dsebastien",
+      "response": {
+        "success": true,
+        "id": "fEmCexGQy5rB9QboVmIw",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Midline",
+      "response": {
+        "success": true,
+        "id": "WxOcDCK1LglLqaHaLLZl",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Haxiom",
+      "response": {
+        "success": true,
+        "id": "SwmvhRFsrd7UEwVF6HN4",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Baizaar",
+      "response": {
+        "success": true,
+        "id": "3rNoSizFi0QwPhksLJcL",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Findyoursecondbrain",
+      "response": {
+        "success": true,
+        "id": "dGBfMmLn9pNFwYXkFnhr",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Chromewebstore",
+      "response": {
+        "success": true,
+        "id": "6tdO252UzXWp4pE2PF6t",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Remember",
+      "response": {
+        "success": true,
+        "id": "kWpbmlibGLwxi9q5Q5d6",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Raindrop",
+      "response": {
+        "success": true,
+        "id": "CK2oRybYbtUh7ADeItfj",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Transcriptapi",
+      "response": {
+        "success": true,
+        "id": "aaBqaG1x2P2hrTxTuQek",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Recapio",
+      "response": {
+        "success": true,
+        "id": "YuKQYaZudB16TlnXfcVY",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Todoist",
+      "response": {
+        "success": true,
+        "id": "uD1ZW3cAc7AJVTkL4YGn",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Nbot",
+      "response": {
+        "success": true,
+        "id": "vDjjfbPICITKtSryleMt",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "M24ai",
+      "response": {
+        "success": true,
+        "id": "INnIIcEuNv4drxeQjPlT",
+        "message": "App submitted successfully!"
+      }
+    },
+    {
+      "success": true,
+      "tool": "Altdump",
+      "response": {
+        "success": true,
+        "id": "vKBPMkMbokKFSMIR64A5",
+        "message": "App submitted successfully!"
+      }
+    }
+  ]
+}

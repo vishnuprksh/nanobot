@@ -1,11 +1,44 @@
 #!/bin/bash
 # Personal Assistant Check-in Script with Telegram notification
+# Added file locking to prevent duplicate messages
 
 DATE=$(date +%Y-%m-%d)
 TIME=$(date +%H:%M)
 NOTE_FILE="/root/.nanobot/workspace/memory/${DATE}.md"
 CHAT_ID="457681374"
 BOT_TOKEN="8275254305:AAEtsrH0DQAbL5uwha9uHu-0N3TkIGFcgpA"
+LOCK_FILE="/tmp/checkin_${TIME//:/}.lock"
+
+# Create lock file to prevent duplicate execution
+if [ -f "$LOCK_FILE" ]; then
+    echo "Check-in script already running for ${TIME}. Exiting."
+    exit 0
+fi
+
+touch "$LOCK_FILE"
+trap 'rm -f "$LOCK_FILE"' EXIT
+
+# Check if we already sent a check-in for this time
+# Look for existing entry in note file
+if [ -f "$NOTE_FILE" ] && grep -q "### ${TIME} Check-in" "$NOTE_FILE"; then
+    echo "Check-in for ${TIME} already exists. Sending message anyway in case it wasn't sent previously..."
+    
+    # Send Telegram message even if entry exists (in case message wasn't sent)
+    MESSAGE="📋 Check-in time! (${TIME})
+
+What have you accomplished since last check-in?
+What's next on your list?
+
+Reply to this message and I'll log your response."
+
+    curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+        -d chat_id="${CHAT_ID}" \
+        -d text="${MESSAGE}" \
+        -d parse_mode="Markdown"
+    
+    echo "Check-in message sent at ${TIME} (entry already existed)"
+    exit 0
+fi
 
 # Send Telegram message using curl
 MESSAGE="📋 Check-in time! (${TIME})

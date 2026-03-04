@@ -102,5 +102,566 @@
       "id": "A92PmNqNZdegSomkz2DP",
       "message": "App submitted successfully!"
     }
+  },
+  "https://nbot.ai": {
+    "name": "nbot.ai",
+    "description": "Build AI Trackers for What Matters to You - Custom AI agents and trackers for personal and business intelligence",
+    "websiteUrl": "https://nbot.ai",
+    "tags": [
+      "ai",
+      "trackers",
+      "agents",
+      "automation",
+      "second-brain",
+      "personal-ai",
+      "monitoring"
+    ],
+    "category": "AI",
+    "pricing": "Freemium",
+    "source": "Manual Submission",
+    "discovered": "2026-02-26T09:22:35.212313",
+    "submitted_at": "2026-02-26T09:22:40.417161",
+    "response": {
+      "success": true,
+      "id": "ZuyXoHIYIBzVsDmavYK9",
+      "message": "App submitted successfully!"
+    }
+  },
+  "https://www.teamoffline.site/": {
+    "name": "Teamoffline",
+    "description": "A productivity tool for managing knowledge and tasks",
+    "websiteUrl": "https://www.teamoffline.site/",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "task-management",
+      "todo",
+      "projects",
+      "collaboration",
+      "team",
+      "sharing",
+      "local-first"
+    ],
+    "category": "Task Management",
+    "pricing": "Free",
+    "source": "Reddit - r/secondbrain",
+    "discovered": "2026-03-01T16:32:33.089577",
+    "submitted_at": "2026-03-01T16:32:38.304497",
+    "response": {
+      "success": true,
+      "id": "YWIublrK2hhtYY0IBkj8",
+      "message": "App submitted successfully!"
+    }
+  },
+  "https://sigilla.net": {
+    "name": "Sigilla",
+    "description": "I built a filter for my Second Brain because I capture too much noise...",
+    "websiteUrl": "https://sigilla.net",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "ai",
+      "artificial-intelligence",
+      "automation"
+    ],
+    "category": "AI",
+    "pricing": "Free",
+    "source": "Reddit - r/secondbrain",
+    "discovered": "2026-03-01T16:32:39.306614",
+    "submitted_at": "2026-03-01T16:32:39.940482",
+    "response": {
+      "success": true,
+      "id": "KitlDEtDNcRvf8VYtlpg",
+      "message": "App submitted successfully!"
+    }
+  },
+  "https://screenpi.pe": {
+    "name": "Screenpi",
+    "description": "I built a tool that turns your entire screen history into a searchable second brain \u2014 open source, r...",
+    "websiteUrl": "https://screenpi.pe",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "ai",
+      "artificial-intelligence",
+      "automation"
+    ],
+    "category": "AI",
+    "pricing": "Free",
+    "source": "Reddit - r/secondbrain",
+    "discovered": "2026-03-01T16:32:40.942977",
+    "submitted_at": "2026-03-01T16:32:41.646608",
+    "response": {
+      "success": true,
+      "id": "5AzwlhS8YkuplyEIUZlI",
+      "message": "App submitted successfully!"
+    }
+  },
+  "https://rel.center": {
+    "name": "Rel",
+    "description": "A productivity tool for managing knowledge and tasks",
+    "websiteUrl": "https://rel.center",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "task-management",
+      "todo",
+      "projects"
+    ],
+    "category": "Task Management",
+    "pricing": "Free",
+    "source": "Reddit - r/secondbrain",
+    "discovered": "2026-03-01T16:32:42.648725",
+    "submitted_at": "2026-03-01T16:32:43.298935",
+    "response": {
+      "success": true,
+      "id": "9gnpnFMoWly67nBRAmFR",
+      "message": "App submitted successfully!"
+    }
+  },
+  "http://glifo.ai": {
+    "name": "Glifo",
+    "description": "building a second brain without relying on plugins...",
+    "websiteUrl": "http://glifo.ai",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "ai",
+      "artificial-intelligence",
+      "automation"
+    ],
+    "category": "AI",
+    "pricing": "Free",
+    "source": "Reddit - r/secondbrain",
+    "discovered": "2026-03-01T16:32:44.302084",
+    "submitted_at": "2026-03-01T16:32:45.369417",
+    "response": {
+      "success": true,
+      "id": "uPziA1QflP9RSUoUb9ZS",
+      "message": "App submitted successfully!"
+    }
+  },
+  "https://www.implicit.cloud/": {
+    "name": "Implicit",
+    "description": "I helped build a product that I think might work as a second brain....",
+    "websiteUrl": "https://www.implicit.cloud/",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "ai",
+      "artificial-intelligence",
+      "automation"
+    ],
+    "category": "AI",
+    "pricing": "Free",
+    "source": "Reddit - r/secondbrain",
+    "discovered": "2026-03-01T16:32:46.376879",
+    "submitted_at": "2026-03-01T16:32:47.440344",
+    "response": {
+      "success": true,
+      "id": "ZhRVdQKC9nm5kSsPgLFL",
+      "message": "App submitted successfully!"
+    }
+  },
+  "http://app.implicitcloud.com/register": {
+    "name": "Implicitcloud",
+    "description": "I helped build a product that I think might work as a second brain....",
+    "websiteUrl": "http://app.implicitcloud.com/register",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "ai",
+      "artificial-intelligence",
+      "automation"
+    ],
+    "category": "AI",
+    "pricing": "Free",
+    "source": "Reddit - r/secondbrain",
+    "discovered": "2026-03-01T16:32:48.442744",
+    "submitted_at": "2026-03-01T16:32:49.132891",
+    "response": {
+      "success": true,
+      "id": "K42niVib6JRHE8CEew5T",
+      "message": "App submitted successfully!"
+    }
+  },
+  "https://buildsheet.one/": {
+    "name": "Buildsheet",
+    "description": "A lightweight Notion-like drag and drop cheatsheet builder...",
+    "websiteUrl": "https://buildsheet.one/",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity"
+    ],
+    "category": "Other",
+    "pricing": "Free",
+    "source": "Reddit - r/secondbrain",
+    "discovered": "2026-03-01T16:32:50.135294",
+    "submitted_at": "2026-03-01T16:32:50.762647",
+    "response": {
+      "success": true,
+      "id": "KfcDLSUH2QymVWSI4qr4",
+      "message": "App submitted successfully!"
+    }
+  },
+  "http://fabric.so": {
+    "name": "Fabric",
+    "description": "Need direction, want to organize learning/resources as a mental health therapist in private practice...",
+    "websiteUrl": "http://fabric.so",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "bookmarking"
+    ],
+    "category": "Bookmarking",
+    "pricing": "Free",
+    "source": "Reddit - r/PKMS",
+    "discovered": "2026-03-01T16:32:51.764866",
+    "submitted_at": "2026-03-01T16:32:52.406982",
+    "response": {
+      "success": true,
+      "id": "fYQjux4vToKpKWENjcmK",
+      "message": "App submitted successfully!"
+    }
+  },
+  "http://www.dsebastien.net": {
+    "name": "Dsebastien",
+    "description": "Need direction, want to organize learning/resources as a mental health therapist in private practice...",
+    "websiteUrl": "http://www.dsebastien.net",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "bookmarking"
+    ],
+    "category": "Bookmarking",
+    "pricing": "Free",
+    "source": "Reddit - r/PKMS",
+    "discovered": "2026-03-01T16:32:53.409416",
+    "submitted_at": "2026-03-01T16:32:54.043634",
+    "response": {
+      "success": true,
+      "id": "fEmCexGQy5rB9QboVmIw",
+      "message": "App submitted successfully!"
+    }
+  },
+  "https://midline.com": {
+    "name": "Midline",
+    "description": "I'm looking for a few testers before I launch my PKMS, Midline...",
+    "websiteUrl": "https://midline.com",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity"
+    ],
+    "category": "Other",
+    "pricing": "Free",
+    "source": "Reddit - r/PKMS",
+    "discovered": "2026-03-01T16:32:55.046203",
+    "submitted_at": "2026-03-01T16:32:55.679356",
+    "response": {
+      "success": true,
+      "id": "WxOcDCK1LglLqaHaLLZl",
+      "message": "App submitted successfully!"
+    }
+  },
+  "https://app.haxiom.io": {
+    "name": "Haxiom",
+    "description": "Exploring side-by-side Markdown rendering + CRDT collaboration...",
+    "websiteUrl": "https://app.haxiom.io",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "collaboration",
+      "team",
+      "sharing"
+    ],
+    "category": "Other",
+    "pricing": "Free",
+    "source": "Reddit - r/PKMS",
+    "discovered": "2026-03-01T16:32:56.681870",
+    "submitted_at": "2026-03-01T16:32:57.321882",
+    "response": {
+      "success": true,
+      "id": "SwmvhRFsrd7UEwVF6HN4",
+      "message": "App submitted successfully!"
+    }
+  },
+  "https://baizaar.tools/todoist-energy-based-workflow-zombie-mode/": {
+    "name": "Baizaar",
+    "description": "accepted that my \"second brain\" needs a low-power mode...",
+    "websiteUrl": "https://baizaar.tools/todoist-energy-based-workflow-zombie-mode/",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "ai",
+      "artificial-intelligence",
+      "automation"
+    ],
+    "category": "AI",
+    "pricing": "Free",
+    "source": "Reddit - r/PKMS",
+    "discovered": "2026-03-01T16:32:58.324499",
+    "submitted_at": "2026-03-01T16:32:59.035741",
+    "response": {
+      "success": true,
+      "id": "3rNoSizFi0QwPhksLJcL",
+      "message": "App submitted successfully!"
+    }
+  },
+  "https://findyoursecondbrain.web.app": {
+    "name": "Findyoursecondbrain",
+    "description": "I made a free directory to track Second Brain tools...",
+    "websiteUrl": "https://findyoursecondbrain.web.app",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "ai",
+      "artificial-intelligence",
+      "automation"
+    ],
+    "category": "AI",
+    "pricing": "Free",
+    "source": "Reddit - r/secondbrain",
+    "discovered": "2026-03-01T16:33:00.037594",
+    "submitted_at": "2026-03-01T16:33:00.732592",
+    "response": {
+      "success": true,
+      "id": "dGBfMmLn9pNFwYXkFnhr",
+      "message": "App submitted successfully!"
+    }
+  },
+  "https://chromewebstore.google.com/detail/hyperknowledge-3000/pdfmcpddbgcafenhofnjokpkpdcgdjai": {
+    "name": "Chromewebstore",
+    "description": "Looking for a few early testers \u2013 Chrome plugin for better Notion search...",
+    "websiteUrl": "https://chromewebstore.google.com/detail/hyperknowledge-3000/pdfmcpddbgcafenhofnjokpkpdcgdjai",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity"
+    ],
+    "category": "Other",
+    "pricing": "Free",
+    "source": "Reddit - r/PKMS",
+    "discovered": "2026-03-01T16:33:01.736118",
+    "submitted_at": "2026-03-01T16:33:02.385983",
+    "response": {
+      "success": true,
+      "id": "6tdO252UzXWp4pE2PF6t",
+      "message": "App submitted successfully!"
+    }
+  },
+  "http://remember.md": {
+    "name": "Remember",
+    "description": "I built a tool to stop losing my AI learnings between sessions...",
+    "websiteUrl": "http://remember.md",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "ai",
+      "artificial-intelligence",
+      "automation"
+    ],
+    "category": "AI",
+    "pricing": "Free",
+    "source": "Reddit - r/PKMS",
+    "discovered": "2026-03-01T16:33:03.388333",
+    "submitted_at": "2026-03-01T16:33:04.032208",
+    "response": {
+      "success": true,
+      "id": "kWpbmlibGLwxi9q5Q5d6",
+      "message": "App submitted successfully!"
+    }
+  },
+  "http://raindrop.io": {
+    "name": "Raindrop",
+    "description": "how i finally fixed my \"input debt\" and stopped hoarding unread youtube links...",
+    "websiteUrl": "http://raindrop.io",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "ai",
+      "artificial-intelligence",
+      "automation"
+    ],
+    "category": "AI",
+    "pricing": "Free",
+    "source": "Reddit - r/PKMS",
+    "discovered": "2026-03-01T16:33:05.035152",
+    "submitted_at": "2026-03-01T16:33:05.738118",
+    "response": {
+      "success": true,
+      "id": "CK2oRybYbtUh7ADeItfj",
+      "message": "App submitted successfully!"
+    }
+  },
+  "https://transcriptapi.com/": {
+    "name": "Transcriptapi",
+    "description": "how i finally fixed my \"input debt\" and stopped hoarding unread youtube links...",
+    "websiteUrl": "https://transcriptapi.com/",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity"
+    ],
+    "category": "Other",
+    "pricing": "Free",
+    "source": "Reddit - r/PKMS",
+    "discovered": "2026-03-01T16:33:06.740668",
+    "submitted_at": "2026-03-01T16:33:07.364927",
+    "response": {
+      "success": true,
+      "id": "aaBqaG1x2P2hrTxTuQek",
+      "message": "App submitted successfully!"
+    }
+  },
+  "https://recapio.com/": {
+    "name": "Recapio",
+    "description": "how i finally fixed my \"input debt\" and stopped hoarding unread youtube links...",
+    "websiteUrl": "https://recapio.com/",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity"
+    ],
+    "category": "Other",
+    "pricing": "Free",
+    "source": "Reddit - r/PKMS",
+    "discovered": "2026-03-01T16:33:08.367050",
+    "submitted_at": "2026-03-01T16:33:08.995764",
+    "response": {
+      "success": true,
+      "id": "YuKQYaZudB16TlnXfcVY",
+      "message": "App submitted successfully!"
+    }
+  },
+  "https://www.todoist.com/": {
+    "name": "Todoist",
+    "description": "how i finally fixed my \"input debt\" and stopped hoarding unread youtube links...",
+    "websiteUrl": "https://www.todoist.com/",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "task-management",
+      "todo",
+      "projects"
+    ],
+    "category": "Task Management",
+    "pricing": "Free",
+    "source": "Reddit - r/PKMS",
+    "discovered": "2026-03-01T16:33:09.999114",
+    "submitted_at": "2026-03-01T16:33:10.638426",
+    "response": {
+      "success": true,
+      "id": "uD1ZW3cAc7AJVTkL4YGn",
+      "message": "App submitted successfully!"
+    }
+  },
+  "http://nbot.ai": {
+    "name": "Nbot",
+    "description": "My second brain became a black hole where information goes to die. How do you actually USE what you ...",
+    "websiteUrl": "http://nbot.ai",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "ai",
+      "artificial-intelligence",
+      "automation"
+    ],
+    "category": "AI",
+    "pricing": "Free",
+    "source": "Reddit - r/secondbrain",
+    "discovered": "2026-03-01T16:33:11.641815",
+    "submitted_at": "2026-03-01T16:33:12.275072",
+    "response": {
+      "success": true,
+      "id": "vDjjfbPICITKtSryleMt",
+      "message": "App submitted successfully!"
+    }
+  },
+  "http://m24ai.com": {
+    "name": "M24ai",
+    "description": "I got tired of explaining my context to AI every time, so I built one that watches my screen and rem...",
+    "websiteUrl": "http://m24ai.com",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "ai",
+      "artificial-intelligence",
+      "automation"
+    ],
+    "category": "AI",
+    "pricing": "Free",
+    "source": "Reddit - r/secondbrain",
+    "discovered": "2026-03-01T16:33:13.277181",
+    "submitted_at": "2026-03-01T16:33:13.919435",
+    "response": {
+      "success": true,
+      "id": "INnIIcEuNv4drxeQjPlT",
+      "message": "App submitted successfully!"
+    }
+  },
+  "http://www.altdump.com/": {
+    "name": "Altdump",
+    "description": "I built a private \u201csecond brain\u201d that actually searches inside your files (not just filenames)...",
+    "websiteUrl": "http://www.altdump.com/",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "ai",
+      "artificial-intelligence",
+      "automation"
+    ],
+    "category": "AI",
+    "pricing": "Free",
+    "source": "Reddit - r/secondbrain",
+    "discovered": "2026-03-01T16:33:14.922575",
+    "submitted_at": "2026-03-01T16:33:15.633285",
+    "response": {
+      "success": true,
+      "id": "vKBPMkMbokKFSMIR64A5",
+      "message": "App submitted successfully!"
+    }
+  },
+  "https://medium.com/@mohammadzeyaahmad/why-everything-you-highlighted-this-year-is-already-gone-5af2825aa413": {
+    "name": "Medium",
+    "description": "A productivity tool for managing knowledge and tasks",
+    "websiteUrl": "https://medium.com/@mohammadzeyaahmad/why-everything-you-highlighted-this-year-is-already-gone-5af2825aa413",
+    "tags": [
+      "second-brain",
+      "pkms",
+      "productivity",
+      "task-management",
+      "todo",
+      "projects"
+    ],
+    "category": "Task Management",
+    "pricing": "Free",
+    "source": "Reddit - r/PKMS",
+    "discovered": "2026-03-02T08:00:06.368283",
+    "submitted_at": "2026-03-02T08:00:11.773221",
+    "response": {
+      "success": true,
+      "id": "e4hsiilUTdqaMxPbtWY9",
+      "message": "App submitted successfully!"
+    }
   }
 }

@@ -126,54 +126,152 @@ class FirebaseSubmitter:
         
         return False
     
+    def extract_tool_name(self, raw_tool):
+        """Extract tool name from raw tool data"""
+        import re
+        from urllib.parse import urlparse
+        
+        url = raw_tool.get('url', '')
+        source_post = raw_tool.get('source_post', '')
+        
+        # Skip non-tool URLs (Reddit links, images, previews)
+        if any(skip in url.lower() for skip in [
+            'reddit.com', 'redd.it', 'preview.redd.it', 
+            'i.redd.it', 'v.redd.it', 'imgur.com', 'youtube.com',
+            'youtu.be', 'github.com', 'discord.gg', 'discord.com'
+        ]):
+            return None  # Skip this tool
+        
+        # Try to extract name from domain
+        try:
+            parsed = urlparse(url)
+            domain = parsed.netloc
+            
+            # Remove common prefixes
+            domain = domain.replace('www.', '').replace('app.', '')
+            
+            # Get the main domain name (e.g., 'sigilla.net' -> 'Sigilla')
+            if '.' in domain:
+                main_part = domain.split('.')[0]
+                if main_part and len(main_part) > 2:  # Valid name
+                    # Capitalize first letter
+                    name = main_part[0].upper() + main_part[1:]
+                    return name
+        except:
+            pass
+        
+        # Try to extract name from source post title
+        # Look for patterns like "I built [ToolName]", "Check out [ToolName]", etc.
+        import re
+        patterns = [
+            r"\"([^\"]+)\"",  # Quoted names
+            r"\[([^\]]+)\]",  # Bracketed names  
+            r"([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s+(?:app|tool|website|platform|software)",
+            r"(?:called|named|titled)\s+['\"]?([^'\".!?]+)['\"]?",
+        ]
+        
+        for pattern in patterns:
+            match = re.search(pattern, source_post)
+            if match:
+                name = match.group(1).strip()
+                if len(name) > 2 and len(name) < 50:  # Reasonable length
+                    return name
+        
+        # If no name found, use domain as fallback
+        try:
+            parsed = urlparse(url)
+            domain = parsed.netloc.replace('www.', '').replace('app.', '')
+            if domain and '.' in domain:
+                main_part = domain.split('.')[0]
+                if main_part and len(main_part) > 2:
+                    return main_part[0].upper() + main_part[1:]
+        except:
+            pass
+        
+        return None  # Cannot determine name
+    
     def format_tool_data(self, raw_tool):
         """Format raw tool data for Firebase submission"""
         # Extract or generate required fields
-        name = raw_tool.get('name', 'Unknown Tool')
+        name = self.extract_tool_name(raw_tool)
+        if not name:
+            return None  # Skip this tool
+        
         description = raw_tool.get('description', '')
         url = raw_tool.get('url', '')
+        source_post = raw_tool.get('source_post', '')
         
-        # If no description, create one
+        # Create description from source post if not provided
         if not description:
-            description = f"A second brain/PKMS tool mentioned in Reddit community"
+            description = f"{source_post[:200]}..."
+            if len(description) < 50:
+                description = f"A productivity tool for managing knowledge and tasks"
         
         # Determine category based on description/tags
         category = "Other"
-        if any(word in description.lower() for word in ['ai', 'artificial', 'intelligence', 'gpt', 'llm']):
+        text_to_check = f"{name} {description} {source_post}".lower()
+        
+        if any(word in text_to_check for word in ['ai', 'artificial', 'intelligence', 'gpt', 'llm', 'chatbot']):
             category = "AI"
-        elif any(word in description.lower() for word in ['visual', 'graph', 'canvas', 'whiteboard']):
+        elif any(word in text_to_check for word in ['visual', 'graph', 'canvas', 'whiteboard', 'diagram', 'map']):
             category = "Visual"
-        elif any(word in description.lower() for word in ['note', 'notes', 'writing']):
+        elif any(word in text_to_check for word in ['note', 'notes', 'writing', 'journal', 'document']):
             category = "Note-taking"
-        elif any(word in description.lower() for word in ['task', 'todo', 'project', 'management']):
+        elif any(word in text_to_check for word in ['task', 'todo', 'project', 'management', 'kanban', 'board']):
             category = "Task Management"
+        elif any(word in text_to_check for word in ['bookmark', 'save', 'collect', 'organize', 'research']):
+            category = "Bookmarking"
+        elif any(word in text_to_check for word in ['code', 'developer', 'programming', 'technical']):
+            category = "Developer"
         
         # Determine pricing
         pricing = "Free"
-        if any(word in description.lower() for word in ['paid', 'premium', 'subscription', 'monthly', 'yearly']):
+        if any(word in text_to_check for word in ['paid', 'premium', 'subscription', 'monthly', 'yearly', '$', '€', '£', 'price']):
             pricing = "Paid"
-        elif any(word in description.lower() for word in ['freemium', 'tier', 'plan']):
+        elif any(word in text_to_check for word in ['freemium', 'tier', 'plan', 'pro ', 'premium']):
             pricing = "Freemium"
         
-        # Extract tags from description or use defaults
-        tags = raw_tool.get('tags', [])
-        if not tags:
-            tags = ["second-brain", "pkms", "productivity"]
-            if category != "Other":
-                tags.append(category.lower().replace('-', ''))
+        # Extract tags
+        tags = ["second-brain", "pkms", "productivity"]
+        
+        # Add category-specific tags
+        if category != "Other":
+            tags.append(category.lower().replace(' ', '-'))
+        
+        # Add tags based on keywords
+        keyword_tags = {
+            'ai': ['ai', 'artificial-intelligence', 'automation'],
+            'visual': ['visual', 'graph', 'whiteboard'],
+            'note': ['note-taking', 'writing', 'editor'],
+            'task': ['task-management', 'todo', 'projects'],
+            'code': ['developer', 'programming', 'technical'],
+            'bookmark': ['bookmarking', 'saving', 'organizing'],
+            'collab': ['collaboration', 'team', 'sharing'],
+            'local': ['local-first', 'offline', 'privacy']
+        }
+        
+        for keyword, tag_list in keyword_tags.items():
+            if any(word in text_to_check for word in [keyword] + tag_list):
+                tags.extend(tag_list)
+        
+        # Remove duplicates and limit
+        tags = list(dict.fromkeys(tags))[:10]
         
         # Ensure website URL is valid
         if not url.startswith(('http://', 'https://')):
             url = f"https://{url}" if url else "https://example.com"
         
+        # Determine source
+        source = f"Reddit - r/{raw_tool.get('subreddit', 'unknown')}"
+        
         return {
             "name": name[:100],  # Limit name length
             "description": description[:500],  # Limit description length
             "websiteUrl": url,
-            "tags": tags[:10],  # Limit to 10 tags
+            "tags": tags,
             "category": category,
             "pricing": pricing,
-            "source": raw_tool.get('source', 'Reddit'),
+            "source": source,
             "discovered": datetime.now().isoformat()
         }
     
@@ -266,6 +364,10 @@ class FirebaseSubmitter:
             for tool in tools:
                 # Format tool data
                 formatted_tool = self.format_tool_data(tool)
+                
+                # Skip if formatting failed (returns None)
+                if not formatted_tool:
+                    continue
                 
                 # Check for duplicates
                 if self.is_duplicate(formatted_tool):
